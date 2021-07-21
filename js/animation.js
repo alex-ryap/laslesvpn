@@ -31,7 +31,7 @@ TweenMax.from('.features__title', {
     trigger: '.features__title',
     start: 'top 80%',
   },
-  y: 200,
+  y: 100,
   opacity: 0,
 });
 
