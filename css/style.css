@@ -15,7 +15,8 @@ body {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1160px;
+  padding: 0 10px;
   width: 100%;
   margin: 0 auto;
 }
@@ -73,13 +74,13 @@ header {
 
 .sign__in {
   text-decoration: none;
-  padding: 15px 25px;
+  padding: 15px 15px;
   margin-right: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
   color: #0b132a;
-  border-radius: 20px;
+  border-radius: 30px;
   transition: 0.3s all ease-in;
 }
 
@@ -102,10 +103,10 @@ header {
   background: #f53838;
 }
 
-.top {
+.top__wrap {
   background-image: url('../img/bgtop.svg');
   background-repeat: no-repeat;
-  background-position: right 100px center;
+  background-position: right center;
 }
 
 .top__content {
@@ -185,12 +186,11 @@ header {
 .features__content {
   width: 400px;
   display: flex;
-  gap: 20px;
   flex-direction: column;
   justify-content: center;
 }
 
-.title {
+.features__title {
   max-width: 380px;
   font-weight: 500;
   font-size: 35px;
@@ -198,7 +198,8 @@ header {
   color: #0b132a;
 }
 
-.subtitle {
+.features__subtitle {
+  margin-top: 20px;
   max-width: 555px;
   font-size: 16px;
   line-height: 30px;
@@ -206,6 +207,7 @@ header {
 }
 
 .features__list {
+  margin-top: 20px;
   list-style-type: none;
 }
 
@@ -324,6 +326,31 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.network__company:nth-child(1) {
+  width: 200px;
+  height: 112px;
+}
+
+.network__company:nth-child(2) {
+  width: 190px;
+  height: 60px;
+}
+
+.network__company:nth-child(3) {
+  width: 190px;
+  height: 60px;
+}
+
+.network__company:nth-child(4) {
+  width: 190px;
+  height: 60px;
+}
+
+.network__company:nth-child(5) {
+  width: 190px;
+  height: 60px;
 }
 
 .swiper-container {
@@ -457,23 +484,16 @@ header {
   transform: rotate(180deg);
 }
 
-.footer {
-  margin-top: 180px;
-  padding: 180px 0 100px 0;
-  background-color: #f8f8f8;
-}
-
 .footer_wrap {
-  position: relative;
+  margin-top: 180px;
+  background-color: #f8f8f8;
+  padding-bottom: 50px;
 }
 
 .subscribe__box {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   background-color: #ffffff;
-  transform: translateY(-125%);
+  transform: translateY(-50%);
   padding: 60px;
   display: flex;
   justify-content: space-between;
@@ -590,4 +610,124 @@ header {
 
 .footer__link:first-child {
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav__item {
+    font-size: 14px;
+  }
+
+  .sign__in {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 15px 40px;
+  }
+
+  .top__wrap {
+    background-position: right 20px center;
+    background-size: 55%;
+  }
+
+  .top__content {
+    padding: 30px 0 30px 20px;
+  }
+
+  .top__title {
+    margin-top: 80px;
+    line-height: 60px;
+    font-size: 40px;
+  }
+
+  .top__text {
+    margin-top: 15px;
+    line-height: 25px;
+    font-size: 14px;
+  }
+
+  .top__btn {
+    margin-top: 30px;
+    font-size: 14px;
+    padding: 18px 60px;
+  }
+
+  .title {
+    font-size: 31px;
+  }
+
+  .subtitle {
+    margin-top: 10px;
+    max-width: 350px;
+    font-size: 14px;
+  }
+
+  .plan__cards {
+    padding: 0 20px;
+  }
+
+  .plan__card {
+    width: 300px;
+  }
+
+  .network__map {
+    margin-top: 100px;
+  }
+
+  .network__companies {
+    margin-top: 50px;
+    justify-content: center;
+  }
+
+  .network__company:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  .network__company:nth-child(1) {
+    width: 100px;
+    height: 56px;
+  }
+
+  .network__company:nth-child(2) {
+    width: 95px;
+    height: 30px;
+  }
+
+  .network__company:nth-child(3) {
+    width: 95px;
+    height: 30px;
+  }
+
+  .network__company:nth-child(4) {
+    width: 95px;
+    height: 30px;
+  }
+
+  .network__company:nth-child(5) {
+    width: 95px;
+    height: 30px;
+  }
+
+  .comments__title {
+    margin-top: 100px;
+  }
+
+  .comments__wrap {
+    padding: 0 50px;
+  }
+
+  .comments__subtitle {
+    margin-top: 10px;
+    width: 420px;
+  }
+
+  .footer__content {
+    padding: 0 20px;
+  }
+
+  .subscribe__box {
+    width: 90%;
+    margin: 0 auto;
+  }
 }

@@ -49,9 +49,8 @@ TweenMax.staggerFrom(
   1,
   {
     scrollTrigger: {
-      trigger: '.features',
-      start: 'top 0%',
-      pin: true,
+      trigger: '.features__title',
+      start: 'top 95%',
       scrub: true,
     },
     x: 100,
@@ -134,3 +133,11 @@ TweenMax.staggerFrom(
   },
   0.1
 );
+
+TweenMax.from('.counter', {
+  textContent: 0,
+  duration: 4,
+  ease: Power1.easeIn,
+  snap: { textContent: 1 },
+  stagger: 1,
+});
