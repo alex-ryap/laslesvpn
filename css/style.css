@@ -166,12 +166,15 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 36px;
   padding: 38px;
 }
 
 .info__item:not(:last-child) {
   border-right: 2px solid #eeeff2;
+}
+
+.info__item__content {
+  margin-left: 36px;
 }
 
 .features_wrap {
@@ -375,7 +378,6 @@ header {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
 .swiper-slide-active .comment__box {
@@ -389,8 +391,11 @@ header {
 
 .comment__user_info {
   display: flex;
-  gap: 20px;
   align-items: center;
+}
+
+.user_info {
+  margin-left: 20px;
 }
 
 .user_name {
@@ -408,12 +413,12 @@ header {
 
 .comment__rating {
   display: flex;
-  gap: 10px;
   align-items: center;
 }
 
 .rating {
   font-size: 16px;
+  margin-right: 10px;
   color: #0b132a;
 }
 
@@ -450,7 +455,10 @@ header {
 
 .carousel_controls {
   display: flex;
-  gap: 20px;
+}
+
+.prev {
+  margin-right: 20px;
 }
 
 .prev,
@@ -549,14 +557,18 @@ header {
 .footer__preview {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
 .footer__about {
   width: 340px;
   font-size: 16px;
   line-height: 30px;
+  margin: 20px 0;
   color: #4f5665;
+}
+
+.social-buttons {
+  margin-bottom: 20px;
 }
 
 .social_btn {
